@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+                                    <!--      MAIN      -->
+    <head>
+    <meta charset="UTF-8">
+    <title>Środki transportu</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body onload=display_ct();>
+        <div>
+                <script src="src/timeScript.js"></script> 
+                    <div id="ctime"> 
+                        <span id='ct'></span>
+                    </div>
+            <h1 class="title">Środki transportu</h1>  
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Strona główna</a>
+            <li><a href="kontakt.html">Kontakt</a>
+                <li class="drop"><a href="#">Rodzaje</a>
+                    <ul class="dropdown">
+                        <li><a href="ladowe.html">Lądowe</a></li>
+                        <li><a href="powietrzne.html">Powietrzne</a></li>
+                        <li><a href="wodne.html">Wodne</a></li>
+                    </ul>
+                </li>
+                <li><a href="logowanie.html">Logowanie</a>
+                <li><a href="rejestracja.html">Rejestracja</a>
+            </ul>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="src/nav.js"></script>
+        </nav>
+
+        <div class="buttoncenter">
+            <!-- <a href="logowanie.html" class="baton">Logowanie</a>
+            &nbsp;
+            <a href="rejestracja.html" class="baton">Rejestracja</a> &nbsp;
+                <a href="index.html" class="baton">Strona główna</a>
+                &nbsp;
+                <a href="ladowe.html" class="baton">Lądowe</a>
+                &nbsp;
+                <a href="wodne.html" class="baton">Wodne</a>
+                &nbsp;
+                <a href="Powietrzne.html" class="baton">Powietrzne</a>
+                &nbsp;
+                <a href="kontakt.html" class="baton">Kontakt</a> -->
+                <form action="src/connect.php" method="post" onsubmit="return validateForm()">
+                <h2 style="padding-top:20px">Wprowadź dane:</h2>
+                <script src="src/registercheck.js"></script>
+
+                <h4>Nazwa użytkownika:</h4>
+                    <input type="text" id="username" class="name" name="username" placeholder="Wprowadź nazwę"><br><br>   <!--TYP 1 - TEXT-->
+                <h4>Hasło:</h4>
+                    <input type="password" id="haslo" name="password" placeholder="Wprowadz hasło"><br>     
+                    <input type="checkbox" id="pokazhaslo">&nbsp;Pokaż hasło<br><br>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="src/eye.js"></script>
+                <h4>Adres e-mail:</h4>
+                    <input type="email" id="email" class="name" name="email" placeholder="Wprowadź e-mail"><br><br>
+                <h4>Numer telefonu:</h4>
+                    <input type="number" id="phone" class="name" name="phone" placeholder="Wprowadź numer telefonu"><br><br>
+                <h4>Data urodzenia:</h4>
+                    <input type="date" id="urodz" class="name" name="urodz" placeholder="Wprowadź date urodzenia"><br><br>
+                <h4>Dodaj plik:</h4>
+                    <input type="file" id="files" class="name" name="files" placeholder="Wybierz plik"><br><br>      
+                    <button type="submit" class="baton">Zarejestruj się</button> 
+                    <img class="displayed" src="data/choose.png" alt="Transport" width="600" height="564"> 
+                </form>
+    
+        </div>
+
+        <a href="#" class="scroll">
+            Do góry
+        </a>
+
+        <footer>
+            <p>Autor: Marek M.<br><br>
+                Kontakt mailowy:
+            <a href="mailto:hege@example.com">stransport@stransport.pl</a><br><br>
+                Numer telefonu: +48 674 214 852
+            </p>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+                <a href="#"><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+        </footer>
+        
+        </body>
+        </html>
